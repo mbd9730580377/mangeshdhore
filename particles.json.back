@@ -8,21 +8,21 @@
       }
     },
     "color": {
-      "value": "#D820F1"
+      "value": "#09e0ed"
     },
     "shape": {
-      "type": "circle",
+      "type": "image",
       "stroke": {
-        "width": 0,
-        "color": "#000000"
+        "width": 2,
+        "color": "#00c9f5"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 8
       },
       "image": {
-        "src": "img/github.svg",
-        "width": 100,
-        "height": 100
+        "src": "https://cdn.pixabay.com/photo/2016/01/14/06/01/star-1139372_960_720.png",
+        "width": 200,
+        "height": 200
       }
     },
     "opacity": {
@@ -36,29 +36,30 @@
       }
     },
     "size": {
-      "value": 5,
+      "value": 10,
       "random": true,
       "anim": {
         "enable": false,
-        "speed": 40,
-        "size_min": 0.1,
+        "speed": 4.872463273808071,
+        "size_min": 30.046856855149766,
         "sync": false
       }
     },
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#ffffff",
+      "color": "#09e0ed",
       "opacity": 0.4,
-      "width": 1
+      "width": 2.5654592973848365
     },
     "move": {
       "enable": true,
-      "speed": 6,
+      "speed": 16.03412060865523,
       "direction": "none",
       "random": false,
       "straight": false,
-      "out_mode": "out",
+      "out_mode": "bounce",
+      "bounce": false,
       "attract": {
         "enable": false,
         "rotateX": 600,
@@ -67,15 +68,15 @@
     }
   },
   "interactivity": {
-    "detect_on": "canvas",
+    "detect_on": "window",
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "bubble"
       },
       "onclick": {
         "enable": true,
-        "mode": "push"
+        "mode": "repulse"
       },
       "resize": true
     },
@@ -94,7 +95,8 @@
         "speed": 3
       },
       "repulse": {
-        "distance": 200
+        "distance": 200,
+        "duration": 0.4
       },
       "push": {
         "particles_nb": 4
@@ -104,13 +106,5 @@
       }
     }
   },
-  "retina_detect": true,
-  "config_demo": {
-    "hide_card": false,
-    "background_color": "#b61924",
-    "background_image": "",
-    "background_position": "50% 50%",
-    "background_repeat": "no-repeat",
-    "background_size": "cover"
-  }
+  "retina_detect": true
 }
