@@ -8,21 +8,21 @@
       }
     },
     "color": {
-      "value": "#09e0ed"
+      "value": "#D820F1"
     },
     "shape": {
-      "type": "image",
+      "type": "circle",
       "stroke": {
-        "width": 2,
-        "color": "#00c9f5"
+        "width": 0,
+        "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 8
+        "nb_sides": 5
       },
       "image": {
-        "src": "https://cdn.pixabay.com/photo/2016/01/14/06/01/star-1139372_960_720.png",
-        "width": 200,
-        "height": 200
+        "src": "img/github.svg",
+        "width": 100,
+        "height": 100
       }
     },
     "opacity": {
@@ -36,30 +36,29 @@
       }
     },
     "size": {
-      "value": 10,
+      "value": 5,
       "random": true,
       "anim": {
         "enable": false,
-        "speed": 4.872463273808071,
-        "size_min": 30.046856855149766,
+        "speed": 40,
+        "size_min": 0.1,
         "sync": false
       }
     },
     "line_linked": {
       "enable": true,
       "distance": 150,
-      "color": "#09e0ed",
+      "color": "#ffffff",
       "opacity": 0.4,
-      "width": 2.5654592973848365
+      "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 16.03412060865523,
+      "speed": 6,
       "direction": "none",
       "random": false,
       "straight": false,
-      "out_mode": "bounce",
-      "bounce": false,
+      "out_mode": "out",
       "attract": {
         "enable": false,
         "rotateX": 600,
@@ -68,15 +67,15 @@
     }
   },
   "interactivity": {
-    "detect_on": "window",
+    "detect_on": "canvas",
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "bubble"
+        "mode": "repulse"
       },
       "onclick": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "push"
       },
       "resize": true
     },
@@ -95,8 +94,7 @@
         "speed": 3
       },
       "repulse": {
-        "distance": 200,
-        "duration": 0.4
+        "distance": 200
       },
       "push": {
         "particles_nb": 4
@@ -106,5 +104,13 @@
       }
     }
   },
-  "retina_detect": true
+  "retina_detect": true,
+  "config_demo": {
+    "hide_card": false,
+    "background_color": "#b61924",
+    "background_image": "",
+    "background_position": "50% 50%",
+    "background_repeat": "no-repeat",
+    "background_size": "cover"
+  }
 }
