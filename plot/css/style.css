@@ -200,7 +200,7 @@ ul.top-links li a i.fa:hover {
     border: none;
 }
 .navbar-nav {
-      float: left;
+      float: right;
        margin: 0.5em 0 0 7em;
 }
 .navbar-default .navbar-brand,.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
