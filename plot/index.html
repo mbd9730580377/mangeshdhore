@@ -25,18 +25,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <link href='//fonts.googleapis.com/css?family=Lato:400,300,300italic,700' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 <!--//web-fonts-->
-<style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
+<style type='text/css'>
+ #map {
+  height: 100%;
+} 
 </style>
 </head>
 <body>
@@ -385,9 +377,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   <div class="container">
 	<h3 class="tittle" style="margin-top:40px;"><span>Location</span></h3>
 	<div id="map"></div>
+	<!-- Replace the value of the key parameter with your own API key. -->
 	<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCO9JrhPkEV1khdrbFt_2ICKKvo8oE4ghQ&callback=initMap">
-    </script>
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZdc1UTP13QgkTFpAI-8xUQN48pWo8EUs&callback=initMap">
+	</script>
   </div>
 </div>
 <!--//featured-projects-->
@@ -831,31 +824,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script src="js/bootstrap.min.js"></script>
 
 <script>
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
+    center: {lat: 18.761019, lng: 73.729887},
+    mapTypeId: 'terrain'
+  });
 
-      // This example adds a red rectangle to a map.
-
-      function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 11,
-          center: {lat: 18.761019, lng: 73.729887},
-          mapTypeId: 'terrain'
-        });
-
-        var rectangle = new google.maps.Rectangle({
-          strokeColor: '#FF0000',
-          strokeOpacity: 0.8,
-          strokeWeight: 2,
-          fillColor: '#FF0000',
-          fillOpacity: 0.35,
-          map: map,
-          bounds: {
-            north: 18.761365,
-            south: 18.760642,
-            east: 73.730084,
-            west: 73.729689
-          }
-        });
-      }
+  var rectangle = new google.maps.Rectangle({
+    strokeColor: '#FF0000',
+    strokeOpacity: 0.8,
+    strokeWeight: 2,
+    fillColor: '#FF0000',
+    fillOpacity: 0.35,
+    map: map,
+    bounds: {
+      north: 18.761365,
+      south: 18.760642,
+      east: 73.730084,
+      west: 73.729689
+    }
+  });
+}
 </script> 
 
 </body>
